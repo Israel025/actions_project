@@ -39,5 +39,5 @@ jobs:
 
     - name: Build and Push Docker Image
       run: |
-        docker build -t izzyadmin/gradel_app:latest .
+        docker build -f ../Dockerfile -t izzyadmin/gradel_app:latest
         docker push izzyadmin/gradel_app:latest
